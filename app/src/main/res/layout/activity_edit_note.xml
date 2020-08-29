@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewNoteActivity">
+
+    <EditText
+        android:id="@+id/et_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:backgroundTint="@android:color/transparent"
+        android:inputType="text"
+        android:maxEms="15"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"/>
+    <EditText
+        android:id="@+id/et_edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/description"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="top"
+        android:layout_below="@id/et_edit_title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"/>
+
+</RelativeLayout>
